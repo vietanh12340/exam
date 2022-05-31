@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array=[0,2,40,23,21,42,19,91]
+    let index=23;
+    document.write(tryRemoveFromArray(array,index));
+
+    function tryRemoveFromArray(array,index) {
+        let arr=[];
+        for(let i=0;i<array.length;i++) {
+            if(array[i]==index) {
+                continue;
+            }
+            arr.push(array[i]);
+        }
+        return arr;
+    }
+
+</script>
+</html>

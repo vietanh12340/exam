@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1: Dùng hàm fimdMax()</title>
+</head>
+<body>
+<script>
+    let arr = [0,2,40,23,21,42,19,91]
+    let result = findMax(arr)
+    document.write( result)
+
+    function findMax(array) {
+        let max = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+</script>
+</body>
+</html>
